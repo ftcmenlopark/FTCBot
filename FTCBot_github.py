@@ -42,3 +42,6 @@ async def role(ctx, requestedrole):
 async def command_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("You need to provide a specific role. Try `!role coding` or `!role fundraising` instead.")
+
+token = ""
+client.run(token)
